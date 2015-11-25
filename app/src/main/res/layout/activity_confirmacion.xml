@@ -1,0 +1,35 @@
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_box="all">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="¿Seguro que desea salir?"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/btnAceptar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|left"
+            android:src="@drawable/icon_ok" />
+
+        <ImageButton
+            android:id="@+id/btnCancelar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/icon_cancel" />
+
+    </FrameLayout>
+
+</android.support.wearable.view.BoxInsetLayout>
